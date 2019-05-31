@@ -3,6 +3,7 @@ package com.example.yandexapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.yandex.authsdk.YandexAuthOptions;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.e("YandexApp", "MainActivity onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
     }
@@ -36,6 +38,36 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTranslucentClick(View view) {
         startActivity(new Intent(this, TranslucentActivity.class));
+    }
+
+    @Override
+    protected void onStart() {
+        Log.e("YandexApp", "MainActivity onStart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.e("YandexApp", "MainActivity onResume");
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.e("YandexApp", "MainActivity onPause");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.e("YandexApp", "MainActivity onStop");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.e("YandexApp", "MainActivity onDestroy");
+        super.onDestroy();
     }
 
 }
