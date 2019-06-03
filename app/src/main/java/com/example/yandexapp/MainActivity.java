@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onBrowserClick3(View view) {
+        Intent intent = new Intent(this, BrowserLoginActivity3.class);
+        startActivity(intent);
+    }
+
     public void onTranslucentClick(View view) {
         startActivity(new Intent(this, TranslucentActivity.class));
     }

@@ -25,6 +25,24 @@
 
         <activity android:name=".BrowserLoginActivity2" />
 
+        <activity
+            android:name=".BrowserLoginActivity3"
+            android:launchMode="singleTop" />
+
+        <activity android:name=".BrowserDataActivity1">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="yandex.ru"
+                    android:path="/images/touch/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

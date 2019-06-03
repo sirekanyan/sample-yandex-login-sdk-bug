@@ -27,6 +27,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onBrowserClick3"
+        android:text="Open Browser Activity 3 (Bugged 2)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:onClick="onTranslucentClick"
         android:text="Open Translucent Activity" />
